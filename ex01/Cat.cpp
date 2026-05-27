@@ -32,3 +32,11 @@ void Cat::makeSound() const {
 std::string Cat::getType() const {
     return type;
 }
+
+void Cat::setIdea(int index, const std::string& idea) {
+    brain->setIdea(index, idea);
+}
+
+std::string Cat::getIdea(int index) const {
+    return brain->getIdea(index);
+}

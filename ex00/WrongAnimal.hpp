@@ -10,7 +10,7 @@ class WrongAnimal {
         WrongAnimal(const std::string& type);
         WrongAnimal(const WrongAnimal& other) = default;
         WrongAnimal& operator=(const WrongAnimal& other) = default;
-        virtual ~WrongAnimal();
-        virtual std::string getType() const;
-        virtual void makeSound() const;
+        ~WrongAnimal();
+        std::string getType() const;
+        void makeSound() const;
 };
