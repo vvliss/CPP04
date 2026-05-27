@@ -12,4 +12,6 @@ class Dog : public Animal {
         ~Dog();
         std::string getType() const;
         void makeSound() const;
+        void setIdea(int index, const std::string& idea);
+        std::string getIdea(int index) const;
 };
