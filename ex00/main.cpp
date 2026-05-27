@@ -52,7 +52,7 @@ int main()
     std::cout << "WrongAnimal: ";
     wrongAnimal->makeSound();
     std::cout << "WrongCat: ";
-    wrongCat->makeSound();  // Same as WrongAnimal - no polymorphism!
+    wrongCat->makeSound();
 
     delete wrongAnimal;
     delete wrongCat;

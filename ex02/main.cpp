@@ -5,17 +5,13 @@
 
 int main()
 {
-    std::cout << "TEST 1: Abstract Animal - Cannot instantiate" << std::endl;
-    std::cout << "Animal a; would cause compilation error" << std::endl;
-    std::cout << "Reason: makeSound() is pure virtual (= 0)" << std::endl;
-
-    std::cout << "\nTEST 2: Concrete classes work" << std::endl;
+    std::cout << "\nTEST 1: Concrete classes work" << std::endl;
     Dog dog;
     Cat cat;
     dog.makeSound();
     cat.makeSound();
 
-    std::cout << "\nTEST 3: Polymorphism with Animal* pointers" << std::endl;
+    std::cout << "\nTEST 2: Polymorphism with Animal* pointers" << std::endl;
     const Animal* animals[4];
     animals[0] = new Dog();
     animals[1] = new Cat();
@@ -30,7 +26,7 @@ int main()
         delete animals[i];
     }
 
-    std::cout << "\nTEST 4: Deep Copy with Brain" << std::endl;
+    std::cout << "\nTEST 3: Deep Copy with Brain" << std::endl;
     Dog d1;
     d1.setIdea(0, "fetch");
     Dog d2 = d1;
